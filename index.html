@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="flex flex-row">
+  <div class="sidebar border-e-[1px] sticky top-0 w-1/6 min-h-screen max-h-screen flex justify-between flex-col">
+    <div class="sidebarHeader">
+      <div class="sideNav m-3 flex flex-row justify-between align-center">
+        <logo class="flex flex-row items-center text-2xl space-x-3">
+          <ion-icon name="apps-outline"></ion-icon>
+          <p>HOTELS</p>
+        </logo>
+        <p class="sidebarBtn text-3xl flex items-center">
+          <ion-icon name="menu-outline"></ion-icon>
+        </p>
+      </div>
+      <div class="sidebarContent my-4">
+        <ul class="flex flex-col w-full space-y-1">
+          <li
+            class="sidebarLinks p-3 cursor-pointer border-s-4 border-white hover:border-blue-500 hover:text-blue-500 flex flex-row items-center space-x-3 w-full">
+            <ion-icon name="compass-outline"></ion-icon>
+            <p>EXPLORE</p>
+          </li>
+          <li
+            class="sidebarLinks p-3 cursor-pointer border-s-4 border-white hover:border-blue-500 hover:text-blue-500 flex flex-row items-center space-x-3 w-full">
+            <ion-icon name="book-outline"></ion-icon>
+            <p>MY BOOKING</p>
+          </li>
+          <li
+            class="sidebarLinks p-3 cursor-pointer border-s-4 border-white hover:border-blue-500 hover:text-blue-500 flex flex-row items-center space-x-3 w-full">
+            <ion-icon name="bookmark-outline"></ion-icon>
+            <p>MY WISHlIST</p>
+          </li>
+          <li
+            class="sidebarLinks p-3 cursor-pointer border-s-4 border-white hover:border-blue-500 hover:text-blue-500 flex flex-row items-center space-x-3 w-full">
+            <ion-icon name="grid-outline"></ion-icon>
+            <p>BLOG</p>
+          </li>
+          <li
+            class="sidebarLinks p-3 cursor-pointer border-s-4 border-white hover:border-blue-500 hover:text-blue-500 flex flex-row items-center space-x-3 w-full">
+            <ion-icon name="settings-outline"></ion-icon>
+            <p>SETTING</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sidebarFooter py-4 px-2">
+      <div class="banner bg-gray-600 rounded-[20px] mb-3 h-[200px] w-[170px]"></div>
+      <div class="question flex items-center space-x-3">
+        <ion-icon class="text-3xl" name="help-circle-outline"></ion-icon>
+        <span>HELP CENTER</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="pageContent w-5/6">
+    <!-- Page Nav Bar -->
+    <div class="navBar p-4 bg-white flex flex-row items-center space-x-3 text-sm">
+      <div class="left flex flex-row justify-between items-center w-10/12 space-x-3">
+        <div class="icon text-2xl p-1 flex justify-center items-center w-fit">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </div>
+        <div class="contentName border-[1px] border-gray w-full rounded-md p-1 px-3">
+          Philadelphia
+        </div>
+        <div class="contentName border-[1px] border-gray w-full rounded-md p-1 px-3">
+          Aug 25, 2023
+        </div>
+        <div class="contentName border-[1px] border-gray w-full rounded-md p-1 px-3">
+          8:00 am - 5 Hours
+        </div>
+        <div class="contentName border-[1px] border-gray w-full rounded-md p-1 px-3">
+          2 guest
+        </div>
+        <div class="contentName border-[1px] border-gray w-full rounded-md p-1 px-3">
+          Homestay
+        </div>
+        <div class="icon text-2xl p-1 justify-center items-center w-fit">
+          <ion-icon name="search-outline"></ion-icon>
+        </div>
+      </div>
+      <div class="right flex flex-row justify-around items-center space-x-3 w-2/12">
+        <div class="icon text-2xl p-2 bg-gray-50 rounded-full flex justify-center items-center w-fit">
+          <ion-icon name="notifications-outline"></ion-icon>
+        </div>
+        <div class="user h-[40px] w-[40px] bg-gray-500 rounded-full"></div>
+      </div>
+    </div>
+
+    <!-- Pages (Home Page) -->
+    <div class="homePage bg-gray-50 p-4">
+      <!-- Page Info Title section -->
+      <div class="info flex flex-row">
+        <div class="infoTitle w-10/12 p-2 flex flex-col">
+          <div class="infoHeading">
+            <h1 class="text-3xl font-bold">Shepherd's Hotel with hot tub</h1>
+          </div>
+          <div class="infoRating flex flex-row items-center space-x-2">
+            <ion-icon class="text-[#Ffd700]" name="star"></ion-icon>
+            <p>4.8 <span class="text-gray-400">. 129 reviews</span></p>
+          </div>
+        </div>
+        <div class="infoIconSection w-2/12 flex flex-row justify-around">
+          <div class="icon text-xl bg-gray-100 w-fit h-fit rounded-full p-2 flex justify-center items-center">
+            <ion-icon name="bookmark"></ion-icon>
+          </div>
+          <div class="icon text-xl bg-gray-100 w-fit h-fit rounded-full p-2 flex justify-center items-center">
+            <ion-icon name="share-social"></ion-icon>
+          </div>
+          <div class="icon text-xl bg-gray-100 w-fit h-fit rounded-full p-2 flex justify-center items-center">
+            <ion-icon name="flag"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <!-- Gallery Section -->
+      <div class="images p-2 flex flex-row space-x-3">
+        <div class="img1 w-7/12 h-[488px] rounded-md bg-pink-600"></div>
+        <div class="gallary flex w-5/12 flex-col space-y-2">
+          <div class="img1 w-full h-full rounded-md bg-green-600"></div>
+          <div class="img1 w-full h-full rounded-md bg-red-600 flex justify-end items-end p-2">
+            <div class="imageBtn text-sm font-bold bg-white p-3 rounded-md w-fit h-fit">
+              SHOW ALL PHOTOS
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Page Content Section -->
+      <div class="mainContent w-full flex flex-row p-2">
+        <div class="info w-7/12">
+          <!-- Page Content Nav -->
+          <div class="contentNav">
+            <ul class="flex flex-row space-x-3">
+              <li class="bg-white rounded-md border-2 border-gray-400 p-1 px-3">
+                About
+              </li>
+              <li class="text-gray-400 p-1 px-3">Rooms</li>
+              <li class="text-gray-400 p-1 px-3">Amenities</li>
+              <li class="text-gray-400 p-1 px-3">Policies</li>
+              <li class="text-gray-400 p-1 px-3">Reviews</li>
+            </ul>
+          </div>
+          <!-- Page Content -->
+          <div class="content p-1">
+            <h3 class="heading text-2xl my-3 font-bold">About</h3>
+            <div class="description">
+              Along with conventional advertising and below the line
+              activities, organizations and corporate bodies have come to
+              realize that they need to invest in trade shows in order to
+              create maximum recall for their product or brand name. There are
+              several benefits to participating in a trade show. The resort
+              Bakhmaro is located at 2050 meters high. The average temperature
+              in August is 13,4 ° C). Bakhmaro Hawa's children of all ages are
+              good. Here are the small ones who have chronic bronchitis, dry
+              pleuritis, lymphadenitis, mild or moderate bronchial asthma or
+              anemia.
+            </div>
+            <!-- Hotel Info -->
+            <div class="hotelInfo my-3">
+              <ul class="flex flex-col space-y-3">
+                <li class="flex flex-row items-start">
+                  <div class="icon p-4 bg-gray-200 flex items-center text-2xl h-fit w-fit rounded-full m-2">
+                    <ion-icon name="heart"></ion-icon>
+                  </div>
+                  <div class="info m-2">
+                    <div class="heading text-2xl font-bold">
+                      Couple Friendly
+                    </div>
+                    <div class="description text-gray-400">
+                      We Provide Couple friendly hourly hotels for both
+                      unmarried and married couples with our completely secure
+                      and safe bookings
+                    </div>
+                  </div>
+                </li>
+                <li class="flex flex-row items-start">
+                  <div class="icon p-4 bg-gray-200 flex items-center text-2xl h-fit w-fit rounded-full m-2">
+                    <ion-icon name="person"></ion-icon>
+                  </div>
+                  <div class="info m-2">
+                    <div class="heading text-2xl font-bold">Pay At Hotel</div>
+                    <div class="description text-gray-400">
+                      You can confirm your booking now and pay at the hotel
+                      when you arrive there.
+                    </div>
+                  </div>
+                </li>
+                <li class="flex flex-row items-start">
+                  <div class="icon p-4 bg-gray-200 flex items-center text-2xl h-fit w-fit rounded-full m-2">
+                    <ion-icon name="location"></ion-icon>
+                  </div>
+                  <div class="info m-2">
+                    <div class="heading text-2xl font-bold">
+                      Local ID Accepted
+                    </div>
+                    <div class="description text-gray-400">
+                      We accept Same City Guests with hassle free check-in
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Amenities -->
+            <div class="hotelAmenities my-3">
+              <h7 class="font-bold text-lg my-3">Amenities</h7>
+
+              <ul class="w-full flex justify-between flex-row flex-wrap text-sm">
+                <li class="w-1/2 flex flex-row items-center space-x-3 font-semibold">
+                  <div class="icon p-3 bg-gray-200 flex items-center text-2xl h-fit w-fit rounded-full m-2">
+                    <ion-icon name="home"></ion-icon>
+                  </div>
+                  <span class="item">
+                    Kitchen
+                  </span>
+                </li>
+                <li class="w-1/2 flex flex-row items-center space-x-3 font-semibold">
+                  <div class="icon p-3 bg-gray-200 flex items-center text-2xl h-fit w-fit rounded-full m-2">
+                    <ion-icon name="home"></ion-icon>
+                  </div>
+                  <span class="item">
+                    Washer
+                  </span>
+                </li>
+                <li class="w-1/2 flex flex-row items-center space-x-3 font-semibold">
+                  <div class="icon p-3 bg-gray-200 flex items-center text-2xl h-fit w-fit rounded-full m-2">
+                    <ion-icon name="person"></ion-icon>
+                  </div>
+                  <span class="item">
+                    Breakfast
+                  </span>
+                </li>
+                <li class="w-1/2 flex flex-row items-center space-x-3 font-semibold">
+                  <div class="icon p-3 bg-gray-200 flex items-center text-2xl h-fit w-fit rounded-full m-2">
+                    <ion-icon name="person"></ion-icon>
+                  </div>
+                  <span class="item">
+                    Laptop-friendly workspace
+                  </span>
+                </li>
+                <li class="w-1/2 flex flex-row items-center space-x-3 font-semibold">
+                  <div class="icon p-3 bg-gray-200 flex items-center text-2xl h-fit w-fit rounded-full m-2">
+                    <ion-icon name="checkbox"></ion-icon>
+                  </div>
+                  <span class="item">
+                    TV, Freezer &WIFI
+                  </span>
+                </li>
+                <li class="w-1/2 flex flex-row items-center space-x-3 font-semibold">
+                  <div class="icon p-3 bg-gray-200 flex items-center text-2xl h-fit w-fit rounded-full m-2">
+                    <ion-icon name="checkbox"></ion-icon>
+                  </div>
+                  <span class="item">
+                    Carbon monoxide alarm
+                  </span>
+                </li>
+                <li class="w-1/2 flex flex-row items-center space-x-3 font-semibold">
+                  <div class="icon p-3 bg-gray-200 flex items-center text-2xl h-fit w-fit rounded-full m-2">
+                    <ion-icon name="information-circle"></ion-icon>
+                  </div>
+                  <span class="item">
+                    Free street parking
+                  </span>
+                </li>
+                <li class="w-1/2 flex flex-row items-center space-x-3 font-semibold">
+                  <div class="icon p-3 bg-gray-200 flex items-center text-2xl h-fit w-fit rounded-full m-2">
+                    <ion-icon name="information-circle"></ion-icon>
+                  </div>
+                  <span class="item">
+                    First aid kit
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Rooms -->
+            <div class="roomsSection w-full my-3 space-y-3">
+              <h7 class="text-xl font-bold">Rooms</h7>
+              <div class="rooms w-full space-y-4">
+
+                <!-- Selected Room -->
+                <div class="roomItem bg-white rounded-xl flex flex-row border-2 border-blue-500 space-x-2">
+                  <div class="roomImage rounded-l-xl w-2/6 bg-purple-500">
+                  </div>
+                  <div class="roomInfo w-2/6 my-5">
+                    <h7 class="font-bold text-2xl">Standard Room</h7>
+                    <ul class="list-disc mt-3 text-gray-400 mx-6 text-sm space-y-1">
+                      <li>1 King size bed</li>
+                      <li>1 bathroom Attached</li>
+                      <li>Max 2 guest</li>
+                    </ul>
+                  </div>
+                  <div class="roomPrice w-2/6 py-3 flex flex-col justify-around">
+                    <div class="priceItem">
+                      <div class="price flex flex-row items-end justify-center pe-2">
+                        <div class="DiscountedPrice text-3xl font-bold">$11,50</div>
+                        <div class="orignalPrice line-through text-gray-400 text-sm ms-2">$20.99</div>
+                      </div>
+                      <p class="text-center pe-3 text-sm text-blue-500 translate-y-[-5px] translate-x-12">per night</p>
+                    </div>
+                    <div class="px-4">
+                      <button class="w-full font-bold p-3 rounded-xl bg-gray-200">Selected</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Un Selected Room -->
+                <div
+                  class="roomItem rounded-xl flex flex-row bg-gray-100 opacity-50 border-2 border-gray-300 space-x-2">
+                  <div class="roomImage rounded-l-xl w-2/6 bg-purple-500">
+                  </div>
+                  <div class="roomInfo w-2/6 my-5">
+                    <h7 class="font-bold text-2xl">Standard Room</h7>
+                    <ul class="list-disc mt-3 text-gray-400 mx-6 text-sm space-y-1">
+                      <li>1 King size bed</li>
+                      <li>1 bathroom Attached</li>
+                      <li>Max 2 guest</li>
+                    </ul>
+                  </div>
+                  <div class="roomPrice w-2/6 py-3 flex flex-col justify-around">
+                    <div class="priceItem">
+                      <div class="price flex flex-row items-end justify-center pe-2">
+                        <div class="DiscountedPrice text-3xl font-bold">$11,50</div>
+                        <div class="orignalPrice line-through text-gray-400 text-sm ms-2">$20.99</div>
+                      </div>
+                      <p class="text-center pe-3 text-sm text-blue-500 translate-y-[-5px] translate-x-12">per night</p>
+                    </div>
+                    <div class="px-4">
+                      <button class="w-full font-bold p-3 rounded-xl bg-blue-500 text-white">Select</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="roomItem rounded-xl flex flex-row bg-gray-100 opacity-50 border-2 border-gray-300 space-x-2">
+                  <div class="roomImage rounded-l-xl w-2/6 bg-purple-500">
+                  </div>
+                  <div class="roomInfo w-2/6 my-5">
+                    <h7 class="font-bold text-2xl">Standard Room</h7>
+                    <ul class="list-disc mt-3 text-gray-400 mx-6 text-sm space-y-1">
+                      <li>1 King size bed</li>
+                      <li>1 bathroom Attached</li>
+                      <li>Max 2 guest</li>
+                    </ul>
+                  </div>
+                  <div class="roomPrice w-2/6 py-3 flex flex-col justify-around">
+                    <div class="priceItem">
+                      <div class="price flex flex-row items-end justify-center pe-2">
+                        <div class="DiscountedPrice text-3xl font-bold">$11,50</div>
+                        <div class="orignalPrice line-through text-gray-400 text-sm ms-2">$20.99</div>
+                      </div>
+                      <p class="text-center pe-3 text-sm text-blue-500 translate-y-[-5px] translate-x-12">per night</p>
+                    </div>
+                    <div class="px-4">
+                      <button class="w-full font-bold p-3 rounded-xl bg-blue-500 text-white">Select</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Booking Section -->
+        <div
+          class="Booking w-5/12 sticky h-fit top-4 m-2 border-[1px] border-gray-200 p-4 rounded-lg bg-white space-y-4">
+          <h4 class="text-xl font-bold">Booking out now</h4>
+
+          <div class="checkinSection flex flex-row justify-between">
+            <div class="checkinDate">
+              <p class="text-gray-400">Check-in date</p>
+              <div class="date font-bold">Aug 7, 2023 | 5 hours</div>
+            </div>
+            <div class="checkinTime">
+              <p class="text-gray-400">Check-in time</p>
+              <div class="date font-bold">8:00 am | 1:00 pm</div>
+            </div>
+          </div>
+
+          <hr class="h-[3px] bg-gray-100 mx-3" />
+
+          <!-- Booking Dropdowns -->
+          <div class="roomtype">
+            <h7 class="text-gray-700">Room Type</h4>
+              <div class="roomTypeDropdown px-1 mt-2">
+                <select
+                  class="w-full p-4 bg-white font-bold rounded-xl border-2 border-gray-200 text-gray-700 appearance-none">
+                  <option value="">Standard Room</option>
+                </select>
+                <ion-icon class="translate-y-[15px] text-gray-400 absolute right-10 text-3xl"
+                  name="chevron-down"></ion-icon>
+              </div>
+          </div>
+
+          <div class="roomtype">
+            <h7 class="text-gray-700">Guest/room/bed</h4>
+              <div class="roomTypeDropdown px-1 mt-2">
+                <select
+                  class="w-full p-4 bg-white font-bold rounded-xl border-2 border-gray-200 text-gray-700 appearance-none">
+                  <option value="">2 guests • 1 bedroom • 2 beds</option>
+                </select>
+                <ion-icon class="translate-y-[15px] text-gray-400 absolute right-10 text-3xl"
+                  name="chevron-down"></ion-icon>
+              </div>
+          </div>
+
+          <hr class="h-[3px] bg-gray-100 mx-3" />
+
+          <!-- Coupon Section -->
+          <div class="couponCode px-2">
+            <input type="text" class="w-full p-4 bg-gray-50 border-2 border-gray-200 rounded-xl">
+            <button class="absolute right-10 translate-y-[16px] font-bold text-blue-500">Apply Coupon Code</button>
+          </div>
+
+          <hr class="h-[3px] bg-gray-100 mx-3" />
+
+          <!-- Price Section -->
+          <div class="priceTotal">
+            <h7 class="font-semibold text-lg">Price breakdown</h7>
+            <div class="items space-y-2 mt-3">
+              <div class="item flex flex-row justify-between">
+                <div class="itemHeading text-gray-400">
+                  $35 for 5 hours
+                </div>
+                <div class="itemPrice font-bold">
+                  $70.00
+                </div>
+              </div>
+              <div class="item flex flex-row justify-between">
+                <div class="itemHeading text-gray-400">
+                  Cleaning fee
+                </div>
+                <div class="itemPrice font-bold">
+                  $25.50
+                </div>
+              </div>
+              <div class="item flex flex-row justify-between">
+                <div class="itemHeading text-gray-400">
+                  Service fee
+                </div>
+                <div class="itemPrice font-bold">
+                  $35.00
+                </div>
+              </div>
+            </div>
+            <div class="total text-xl mt-3 font-bold flex flex-row justify-between">
+              <div class="totalHeading">
+                Total
+              </div>
+              <div class="totalPrice">
+                $130.50
+              </div>
+            </div>
+          </div>
+
+          <button type="submit"
+            class="bg-blue-500 flex flex-row justify-center items-center space-x-2 text-white w-full p-3 font-bold rounded-xl text-sm">
+            <ion-icon name="calendar-clear"></ion-icon>
+            <span>Book Now</span>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
